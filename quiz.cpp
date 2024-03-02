@@ -16,6 +16,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='b' || op=='B') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 2 :"<<endl;
         cout<<"What does the keyword 'static' mean in C++ when used inside a class?"<<endl;
@@ -27,6 +28,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='b' || op=='B') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 3 :"<<endl;
         cout<<"Which of the following is the correct way to define a reference in C++?"<<endl;
@@ -35,6 +37,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='a' || op=='A') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 4 :"<<endl;
         cout<<"What is the output of the following code?"<<endl;
@@ -48,6 +51,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='b' || op=='B') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 5 :"<<endl;
         cout<<"What is the output of the following code?"<<endl;
@@ -62,6 +66,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='a' || op=='A') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 6 :"<<endl;
         cout<<"What is a virtual destructor in C++?"<<endl;
@@ -73,6 +78,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='c' || op=='C') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 7 :"<<endl;
         cout<<"What is the difference between new and malloc() in C++?"<<endl;
@@ -84,6 +90,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='b' || op=='B') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 8 :"<<endl;
         cout<<"What is the use of the typeid operator in C++?"<<endl;
@@ -92,6 +99,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='a' || op=='A') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 9 :"<<endl;
         cout<<"Explain the difference between const pointer, pointer to const, and const pointer to const in C++."<<endl;
@@ -100,6 +108,7 @@ int playquiz(char c){
         cin>>op;
         if(op=='a' || op=='A') score++;
 
+        cout<<endl;
 
         cout<<"Question Number - 10 :"<<endl;
         cout<<"Explain the concept of function overloading and function overriding in C++ with examples."<<endl;
@@ -123,12 +132,19 @@ int main()
     cout<<"** Remember to click ENTER after choosing any option! **"<<endl;
     cout<<"** Press 's' to start the quiz. **"<<endl;
     cin>>c;
+    
     int score=playquiz(c);
+    
+    cout<<endl;
+    
     cout<<"Your quiz score is:"<<score<<endl;
     if(score>=0 &&score<=3) cout<<"A little more practice and you'll soon grasp these concepts. Don't lose heart, keep coding!"<<endl;
     else if(score>3 && score<7) cout<<"You're getting there! Keep practicing and exploring C++ concepts. You're closer to mastering this than you think!"<<endl;
     else if(score>=7 && score<=8) cout<<"Almost at the top! Keep fine-tuning those areas where you missed a few points, and you'll be a C++ whiz!"<<endl;
     else if(score>=9 && score<=10) cout<<"Exceptional job! You've truly mastered these concepts. Keep challenging yourself further, there's always more to learn!"<<endl;
+
+    cout<<endl;
+    
     cout<<"** END OF THE QUIZ **";
     return 0;
 }
